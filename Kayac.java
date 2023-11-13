@@ -114,10 +114,10 @@ public class Kayac implements IReserva {
                 reserva.setCantidadMaletas(cantidadMaletas);
             }
 
-            if (!"No VIP".equalsIgnoreCase(getTipoUsuario(reserva.getUsername()))) {
+            if (!"NoVIP".equalsIgnoreCase(getTipoUsuario(reserva.getUsername()))) {
                 System.out.println("Cantidad de cuotas (1 a 24): ");
                 int cuotas = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea pendiente
+                scanner.nextLine();
                 System.out.println("Ingrese la clase de vuelo (Coach o Primera clase): ");
                 String claseVuelo = scanner.nextLine();
                 reserva.setCuotas(cuotas);

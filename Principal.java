@@ -40,6 +40,10 @@ public class Principal {
                         System.out.println("3. Pérfil");
                         System.out.println("4. Salir");
                         int opcion2 = scanner.nextInt();
+                        scanner.nextLine();
+                        while (loggedIn) {
+
+                        }
                         switch (opcion2) {
                             case 1:
                                 System.out.println("--------------------------");
@@ -81,10 +85,12 @@ public class Principal {
                                 System.out.println("Contraseña cambiada exitosamente.");
                                 break;
                             case 4:
-
+                                System.out.println("Saliendo del Sistema de KAYAC....");
+                                System.exit(0);
                                 break;
                             default:
                                 System.out.println("Opción no válida. Volviendo al Menú Principal.");
+                                break;
                         }
                     } else {
                         System.out.println("No se ha logrado iniciar sesión");
@@ -98,7 +104,7 @@ public class Principal {
                     String usernameRegistro = scanner.next();
                     System.out.println("Ingrese una contraseña: ");
                     String passwordRegistro = scanner.next();
-                    System.out.println("Ingrese el tipo de usuario (VIP o No VIP): ");
+                    System.out.println("Ingrese el tipo de usuario (VIP o NoVIP): ");
                     String tipoUsuario = scanner.next();
 
                     kayac.registroUsuario(usernameRegistro, passwordRegistro, tipoUsuario);
