@@ -41,9 +41,7 @@ public class Principal {
                         System.out.println("4. Salir");
                         int opcion2 = scanner.nextInt();
                         scanner.nextLine();
-                        while (loggedIn) {
 
-                        }
                         switch (opcion2) {
                             case 1:
                                 System.out.println("--------------------------");
